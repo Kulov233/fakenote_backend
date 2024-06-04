@@ -1,0 +1,43 @@
+{
+    "name": "fakenote-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server/server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "contributors": [
+        {
+            "name": "Kulov233",
+            "url": "https://github.com/Kulov233"
+        }
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": ">=18.x"
+    },
+    "dependencies": {
+        "axios": "^1.6.7",
+        "bcryptjs": "^2.4.3",
+        "core-js": "^3.8.1",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "mongoose": "^5.11.9",
+        "nodemailer": "^6.9.9",
+        "nodemon": "^3.0.3",
+        "papaparse": "^5.4.1",
+        "validator": "^13.11.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.10",
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-react": "^7.12.10",
+        "babel-loader": "^8.2.2",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.5.0",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.11.1"
+    }
+}
