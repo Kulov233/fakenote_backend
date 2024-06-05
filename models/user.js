@@ -12,6 +12,7 @@ const UserSchema = new mongoose.Schema({
   password: String, // 密码
   avatar: String, // 头像，Base64编码
   userBio: String, // 用户签名
+  verificationCode: String, // 邮箱验证码
   notes: [NoteSchema] // 用户的笔记
 });
 

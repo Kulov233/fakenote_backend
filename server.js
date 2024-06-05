@@ -6,7 +6,6 @@ const session = require("express-session");
 const mongoose = require("mongoose");
 
 const userApi = require("./api/user");
-const auth = require("./middlewares/auth");
 
 const config = require("./config/config");
 
