@@ -6,6 +6,7 @@ const session = require("express-session");
 const mongoose = require("mongoose");
 
 const userApi = require("./api/user");
+const noteApi = require("./api/note");
 
 const config = require("./config/config");
 
@@ -39,6 +40,7 @@ app.use(
 
 // connect user-defined routes
 app.use("/api/user", userApi);
+app.use("/api/note", noteApi);
 
 // any server errors cause this function to run
 app.use((err, req, res, next) => {

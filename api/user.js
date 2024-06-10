@@ -39,6 +39,10 @@ async function register(req, res) {
                 }
 
                 // 检验数据合法性
+                if (!userID || !email || !password) {
+                    return res.status(400).send({ message: "请填写所有信息。" });
+                }
+
                 if (email && !validator.isEmail(email)) {
                     return res.status(400).send({ message: "电子邮件格式无效。" });
                 }
